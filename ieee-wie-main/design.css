@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color:  #fcfcfb;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0px auto 0px auto;
+}
+
+/*.....................*/
+/*---HEADING---*/
+
+header{
+    background-image: linear-gradient(rgba(56, 55, 55, 0.6),rgba(56, 55, 55, 0.6)),url(images/girl.jpg);
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 0px;
+    
+}
+.text-box{
+    position: absolute;
+    width: 1140px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 200%;
+    font-weight: 300;
+    
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+
+span{
+    font-variant:small-caps ;
+}
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s,font-family 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
+    font-family: cursive;
+    
+}
+
+/*.....................*/
+/*--- hearder button---*/
+
+.btn:link,
+.btn:visited{
+    background-color: #e67e22;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 1px solid #e67e22;
+    transition: background-color 0.2s, color 0.2s;
+   
+}
+.btn:hover,
+.btn:active{
+    background-color: rgba(255, 255, 255, 0);
+    color: #e99041;
+    border:2px solid #cf6d17
+}
+
+/*.....................*/
+/*---main blog design---*/
+
+.page h1{
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.card{
+    background-color: #fff;
+    color: black;
+    width:70%;
+    margin: 3% 15%;
+    box-shadow: 0 4px 8px 0 #bee4fc;
+    transition: box-shadow 0.3s;
+    line-height: 145%;
+    padding:3% 5%;
+
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 #7dc9f9;
+  }
+  h2{
+      font-size: 150%;
+      line-height: 145%;
+      font-weight: 400;
+      margin-bottom: 2%;
+  }
+  li{
+      margin-bottom:0.8%;
+  }
+.orange{
+    color:#e67e22 ;
+}
+.blu{
+    color: #1da1f3;
+}
+.gap{
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+h3{
+    font-size: 110%;
+}
+.shift-lil{
+    margin-left: 5%;
+}
+.shift-less{
+    margin-left: 7%;
+}
+.shift-more{
+    margin-left: 9%;
+}
+
+
+#hp  {
+    float: right;    
+     margin: 0 0 0 15px;
+    }
+
+
+    /*  ..............card styling.......*/
+
+    * {
+        box-sizing: border-box;
+      }
+      
+      
+      /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 99%;
+        padding: 10%;
+      }
+      
+      /* Remove extra left and right margins, due to padding */
+      .row {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive columns */
+      @media screen /*and (max-width: 600px) */ {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(2, 66, 194, 0.322);
+        padding:2%;
+        text-align: center;
+        background-color: #ffffff;
+      }
